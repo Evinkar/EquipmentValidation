@@ -6,8 +6,8 @@
 </head>
 <body>
     <div th:each="equipment : ${equipList}" >
-        <a th:text="@{equipment/{id}(id=${equipment.getId()})}" th:text="${equipment.getRegistrationCardNumber()} + ', '
-            + ${equipment.getName()} + ', ' + ${equipment.getSerialNumber()}"></a>
+        <a th:href="@{equipment/{id}(id=${equipment.getId()})}" th:text="${equipment.getRegistrationCardNumber()} + ', '
+            + ${equipment.getName()} + ', ' + ${equipment.getSerialNumber()}">text</a>
     </div>
 
 </body>

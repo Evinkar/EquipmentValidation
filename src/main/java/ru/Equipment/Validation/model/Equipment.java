@@ -1,13 +1,9 @@
 package ru.Equipment.Validation.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-
 import java.time.LocalDate;
 
-@Entity
 public class Equipment {
-    @Id
+
     private int id;
     private String registrationCardNumber;
     private String name;
